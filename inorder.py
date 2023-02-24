@@ -4,7 +4,7 @@ class Node:
      self.right = None
      self.left = None
      
-def postorderTraversal(node):
+def inorderTraversal(node):
      if node is not None:
          postorderTraversal(node.left)
          print(node.data)
@@ -25,4 +25,4 @@ root.left.left.right = Node(7)
 # Recorrido inorder,  primero se visitan todos los nodos del subárbol izquierdo en orden, luego se visita el nodo raíz y finalmente se visitan todos los nodos del subárbol derecho en orden. Este recorrido se utiliza comúnmente para obtener una lista
 # ordenada de los nodos de un árbol binario de búsqueda.
 print( "Recorrido inorder del arbol:")   
-postorderTraversal(root)
+inorderTraversal(root)
