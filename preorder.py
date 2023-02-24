@@ -4,7 +4,7 @@ class Node:
      self.right = None
      self.left = None
      
-def postorderTraversal(node):
+def preorderTraversal(node):
      if node is not None:
          print(node.data)
          postorderTraversal(node.left)
@@ -25,4 +25,4 @@ root.left.left.right = Node(7)
 # Recorrido preorder, recorre el arbol visitando primero el nodo raiz, 
 # luego el subarbol izquierdo y finalmente el subarbol derecho
 print( "Recorrido preorder del arbol:")   
-postorderTraversal(root)
+preorderTraversal(root)
